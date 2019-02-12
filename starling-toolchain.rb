@@ -1,15 +1,16 @@
 class StarlingToolchain < Formula
   desc "Quick install of the Starling development toolchain"
   homepage "https://github.com/swift-nav/starling"
-  url "https://github.com/TheHipbot/weather/raw/master/archive/weather-1.0.0.tar.gz"
-  sha256 "b1c7ab25dfb4530a5e35aa690d79469de5ec419dd284f03868935c2417e1ee3a"
+  url "https://github.com/swift-nav/homebrew-swift-devs/blob/master/artifacts/starling-toolchain-v1.0.0.tar.gz"
+  sha256 "31bf63152617289e27c749775399489dca59800fadf13515bee166d9039a6c37"
   version "1.0.0"
-
-  depends_on "curl"
 
   bottle :unneeded
 
   def install
-    bin.install "weather"
+    bin.install "clang-6.0"
+    bin.install "clang-format"
+    bin.install "clang-tidy"
+    bin.install "arm-none-eabi-gcc"
   end
 end

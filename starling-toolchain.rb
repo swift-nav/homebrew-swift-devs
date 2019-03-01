@@ -21,6 +21,8 @@ class StarlingToolchain < Formula
     (buildpath/"clang-4.0").install resource("clang-4.0")
     (buildpath/"gcc-arm-none-eabi-6").install resource("arm-gcc")
 
+    rm "bin/clang-6.0"
+    mv "bin/clang", "bin/clang-6.0"
     mv "bin/clang++", "bin/clang++-6.0"
     mv buildpath/"clang-4.0/bin/clang-format", buildpath/"clang-4.0/bin/clang-format-4.0"
     mv buildpath/"clang-4.0/bin/clang-tidy", buildpath/"clang-4.0/bin/clang-tidy-4.0"

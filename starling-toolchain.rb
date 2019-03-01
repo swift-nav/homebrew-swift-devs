@@ -3,7 +3,7 @@ class StarlingToolchain < Formula
   homepage "https://github.com/swift-nav/starling"
   url "http://releases.llvm.org/6.0.0/clang+llvm-6.0.0-x86_64-apple-darwin.tar.xz"
   sha256 "0ef8e99e9c9b262a53ab8f2821e2391d041615dd3f3ff36fdf5370916b0f4268"
-  version "1.1.1"
+  version "1.2.0"
 
   bottle :unneeded
 

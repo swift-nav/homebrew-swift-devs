@@ -6,7 +6,10 @@ class StarlingToolchain < Formula
   version "2.0.0"
 
   depends_on "starling-clang-tools"
+  depends_on "starling-python-tools"
   depends_on "check"
+  depends_on "gh"
+  depends_on "cmake"
 
   bottle :unneeded
 

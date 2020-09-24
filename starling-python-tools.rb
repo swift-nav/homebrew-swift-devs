@@ -11,7 +11,4 @@ class StarlingPythonTools < Formula
     depends_on "pipenv"
   
     bottle :unneeded
-  
-    def install
-    end
 end

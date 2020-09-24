@@ -11,4 +11,10 @@ class StarlingPythonTools < Formula
     depends_on "pipenv"
   
     bottle :unneeded
+
+    def install
+        (doc/"README").write <<~EOS
+          Check out the Starling repository README for details on the starling project. https://github.com/swift-nav/starling
+        EOS
+    end
 end

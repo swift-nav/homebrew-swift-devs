@@ -3,7 +3,7 @@ class StarlingClangTools < Formula
   homepage "https://github.com/swift-nav/starling"
   url "file:///dev/null"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  version "1.0.0"
+  version "2.0.0"
 
   depends_on "llvm@6"
 

@@ -1,4 +1,4 @@
-class StarlinPythonTools < Formula
+class StarlingPythonTools < Formula
     desc "Quick install of the Starling development python toolchain"
     homepage "https://github.com/swift-nav/starling"
     url "file:///dev/null"

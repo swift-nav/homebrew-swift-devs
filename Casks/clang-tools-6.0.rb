@@ -9,4 +9,7 @@ cask "clang-tools-6.0" do
   
     binary "clang+llvm-6.0.0-x86_64-apple-darwin/bin/clang-format", target: "clang-format-6.0"
     binary "clang+llvm-6.0.0-x86_64-apple-darwin/bin/clang-tidy", target: "clang-tidy-6.0"
+    binary "clang+llvm-6.0.0-x86_64-apple-darwin/bin/clang", target: "clang-6.0"
+    binary "clang+llvm-6.0.0-x86_64-apple-darwin/bin/clang++", target: "clang++-6.0"
+    binary "clang+llvm-6.0.0-x86_64-apple-darwin/bin/llvm-cov", target: "llvm-cov-6.0"
   end

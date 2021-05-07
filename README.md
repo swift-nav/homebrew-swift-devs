@@ -10,15 +10,19 @@ brew tap swift-nav/swift-devs
 You will now have access to all the formulae in the `swift-devs` tap, and can install them as you would any of the other core `brew` formulae.
 
 ## Formulae
-### `starling-toolchain`
-The `starling-toolchain` formula installs all elements necessary to compile and run the [Starling repo](https://github.com/swift-nav/starling). This includes appropriate versions of the [Clang compiler](http://releases.llvm.org/) and [GNU embedded toolchain for ARM](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). It will also set up the necessary symbolic links so everything is available on your path.
+### `clang-tools-6.0`
+The `clang-tools-6.0` formula installs all tools necessary to run clang-format and clang-tidy on the [Starling repo](https://github.com/swift-nav/starling). This includes appropriate versions of [Clang](http://releases.llvm.org/). It will also set up the necessary symbolic links so everything is available on your path.
 
 Kick off the installation process as you would any other `brew` formula by running:
 ```
-brew install starling-toolchain
+brew install clang-tools-6.0
 ```
 
-Note that the install may take several minutes, as the files at hand are quite large.
+### Old formulae
+If you previously installed the now obsolete formulae from this tap, you may want to uninstall them. This is not done automatically. For example:
+```
+brew uninstall starling-clang-tools starling-toolchain llvm@6
+```
 
 ## Removing the `swift-devs` tap
 If you no longer wish to access the `swift-devs` tap, you may delete it from your local instance of `brew` with the following command:

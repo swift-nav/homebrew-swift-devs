@@ -5,8 +5,6 @@ class PiksiFirmwareToolchain < Formula
   sha256 "7d3080514a2899d05fc55466cdc477e2448b6a62f536ffca3dd846822ff52900"
   version "1.0.0"
 
-  bottle :unneeded
-
   conflicts_with "arm-none-eabi-gcc", :because => "piksi-firmware-tools also installs arm-none-eabi-gcc"
 
   depends_on "cmake"
